@@ -864,12 +864,10 @@ ul.price__item{
     }
 
     .header__top-inner.header__top-inner--active .menu__btn path{
-        fill:white;
         transition: all .5s;
     }
 
     .header__top-inner.header__top-inner--active .menu__btn rect{
-        fill:white;
         transition: all .5s;
     }
 
