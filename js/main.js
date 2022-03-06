@@ -18,7 +18,9 @@ window.onscroll = function() {
                 $('body,html').animate({scrollTop: top-130}, 1500);
             });
         
-   
+            var mixer = mixitup('.gallery__content');
+
+
     $('.blog__slider-inner').slick({
         dots: true,
         arrows: false,
