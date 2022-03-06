@@ -251,29 +251,29 @@
             </h2>
             <div class="gallery__top">
                 <div class="gallery__top-btn">
-                    <button class="gallery__btn">ВСЕ</button>
-                    <button class="gallery__btn">ТУРИСТЫ</button>
-                    <button class="gallery__btn">ПРИРОДА</button>
-                    <button class="gallery__btn">ПРОФИ</button>
+                    <button class="gallery__btn" data-filter="all">ВСЕ</button>
+                    <button class="gallery__btn" data-filter=".category-t">ТУРИСТЫ</button>
+                    <button class="gallery__btn" data-filter=".category-p">ПРИРОДА</button>
+                    <button class="gallery__btn" data-filter=".category-prof">ПРОФИ</button>
                 </div>
                 <div class="gallery__content">
-                    <div class="gallery__item gallery__item-max">
+                    <div class="gallery__item gallery__item-1 mix category-prof category-t">
                         <img src="img/gallery/1.jpg" alt="">
                     </div>
-                    <div class="gallery__item gallery__item-small">
+                    <div class="gallery__item gallery__item-2 mix category-t">
                         <img src="img/gallery/2.jpg" alt="">
                     </div>
-                    <div class="gallery__item gallery__item-middle">
+                    <div class="gallery__item gallery__item-3 mix category-p">
                         <img src="img/gallery/3.jpg" alt="">
                     </div>
-                    <div class="gallery__item gallery__item-middle">
+                    <div class="gallery__item gallery__item-4 mix category-t">
                         <img src="img/gallery/4.jpg" alt="">
                     </div>
-                    <div class="gallery__item gallery__item-max">
-                        <img src="img/gallery/5.jpg" alt="">
-                    </div>
-                    <div class="gallery__item gallery__item-small">
+                    <div class="gallery__item gallery__item-5 mix category-t category-prof">
                         <img src="img/gallery/6.jpg" alt="">
+                    </div>
+                    <div class="gallery__item gallery__item-6 mix category-t category-p">
+                        <img src="img/gallery/5.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -601,6 +601,7 @@
     </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/mixitup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
