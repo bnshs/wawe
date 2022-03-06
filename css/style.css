@@ -339,6 +339,7 @@ background-image: url('../img/surf-icon.svg')
     font-size: 24px;
     line-height: 18px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 
@@ -352,30 +353,91 @@ background-image: url('../img/surf-icon.svg')
 }
 
 .gallery__content{
-    column-count: 4;
-    column-gap: 40px;
-    margin-bottom: 50px;
-}
+    display: grid; 
 
-.gallery__item{
-    margin-bottom: 40px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     
-}
+    gap: 40px;
+    height: 100%;
+    
+ }
+   
+ .gallery__item-1 {
+ 
+    
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 3;
+    
+ }
+ .gallery__item-2 {
+ 
+     
+    grid-row-start: 2;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+    
+ }
+ .gallery__item-3 {
+ 
+     
+    grid-row-start: 2;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+    
+ }
+ .gallery__item-4 {
+ 
+    
+    grid-row-start: 1;
+    grid-column-start: 3;
+ 
+    grid-row-end: 2;
+    grid-column-end: 4;
+    
+ }
+ .gallery__item-5 {
+ 
+     
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 2;
+    grid-column-end: 5;
+    
+ }
+ .gallery__item-6 {
+ 
+    
+    grid-row-start: 2;
+    grid-column-start: 3;
+ 
+    grid-row-end: 3;
+    grid-column-end: 5;
+    
+ }
 
-.gallery__item-max img{
-    max-width: 580px;
-}
+ .gallery__item-1 img,
+ .gallery__item-2 img,
+ .gallery__item-3 img,
+ .gallery__item-4 img,
+ .gallery__item-5 img,
+ .gallery__item-6 img{
+     width: 100%;
+     height: 100%;
+ }
 
-.gallery__item-middle img{
-    max-width: 290px;
-}
-
-.gallery__item-small img{
-    max-width: 260px;
-} 
 
 .gallery__add{
     text-align: center;
+    margin-top: 50px;
 }
 
 .gallery__add-block{
@@ -973,6 +1035,12 @@ ul.price__item{
         margin: 0 auto 20px;
     }
 
+    .gallery__content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }
 
 @media(max-width: 715px){
@@ -1004,10 +1072,6 @@ ul.price__item{
     .gallery__btn{
         font-size: 20px;
         line-height: 15px;
-    }
-
-    .gallery__content{
-        display: none;
     }
 
     .gallery__numbers{
